@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strings"
+	// "strings"
 )
 
 func main() {
@@ -102,11 +102,64 @@ func main() {
 	fmt.Println(str2) */
 
 	// strings.Index 查找字符串
-	str1 := "this is a string"
+	/* str1 := "this is a string"
 	str2 := "s"
 	index1 := strings.Index(str1, str2)
 	index2 := strings.LastIndex(str1, str2)
 	fmt.Println(index1)
-	fmt.Println(index2)
+	fmt.Println(index2) */
 
+	/* age := 30;
+	if age > 20 {
+		fmt.Println("age is greater than 20")
+	}
+	fmt.Println(age)
+	if age1 := 20; age1 > 10 {
+		fmt.Printf("age1 is greater than 10")
+	} */
+
+	/* for i := 0; i < 10; i++ {
+		fmt.Println(i+1)
+	} */
+
+	/* sum := 0
+	count := 0
+	for i := 1; i <= 100; i++ {
+		if i%9==0 {
+			sum += i
+			count++
+		}
+	}
+	fmt.Println(sum)
+	fmt.Println(count) */
+
+	/* for i := 1; i <= 16; i++ {
+		fmt.Printf("*")
+		if i%4==0 {
+			fmt.Println()
+		}
+	} */
+
+	/* n := 5
+
+	switch n {
+	case 1,3,5,7,9:
+		fmt.Println("奇数")
+	case 2,4,6,8,10:
+		fmt.Println("偶数")
+	default:
+		fmt.Println("data is wrong")
+	} */
+
+	n := 27
+	if n > 24 {
+		fmt.Println("Adult")
+		goto label2
+	}
+
+	fmt.Println("A")
+	fmt.Println("B")
+label2:
+	fmt.Println("C")
+	fmt.Println("D")
 }
