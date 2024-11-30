@@ -1,9 +1,8 @@
 package main
 
-import (
-	"fmt"
-	// "strings"
-)
+import "fmt"
+
+// "strings"
 
 func main() {
 	/*
@@ -151,15 +150,28 @@ func main() {
 		fmt.Println("data is wrong")
 	} */
 
-	n := 27
-	if n > 24 {
-		fmt.Println("Adult")
-		goto label2
-	}
+	/* n := 27
+		if n > 24 {
+			fmt.Println("Adult")
+			goto label2
+		}
 
-	fmt.Println("A")
-	fmt.Println("B")
-label2:
-	fmt.Println("C")
-	fmt.Println("D")
+		fmt.Println("A")
+		fmt.Println("B")
+	label2:
+		fmt.Println("C")
+		fmt.Println("D") */
+
+	/* arr := [...]int{1, 2, 3, 4, 5}
+	for _, v := range arr {
+		fmt.Printf("%v", v)
+	} */
+
+	var sliceA []int
+	var sliceB = []int{2, 4, 5}
+	sliceA = append(sliceA, 12)
+	fmt.Println(sliceA)
+	sliceA = append(sliceA, sliceB...)
+	fmt.Println(sliceA)
+	fmt.Println(sliceB)
 }
